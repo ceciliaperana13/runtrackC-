@@ -15,5 +15,15 @@ int main() {
     Joueur j3(5, 15, "Cecilia");
     j3.afficher();
 
+    // Utilisation des méthodes utilisant this
+    j3.deplacer(3, -2);
+    j3.afficher();
+
+    j3.teleporter(100, 200);
+    j3.afficher();
+
+    j3.renommer("SuperCecilia");
+    j3.afficher();
+
     return 0;
 }

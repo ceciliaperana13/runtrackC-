@@ -11,17 +11,17 @@ Joueur::Joueur(int px, int py) : x(px), y(py), nom("Inconnu") {}
 Joueur::Joueur(int px, int py, std::string pnom)
     : x(px), y(py), nom(pnom) {}
 
-// --- GETTERS ---
+// - GETTERS -
 int Joueur::getX() const { return x; }
 int Joueur::getY() const { return y; }
 std::string Joueur::getNom() const { return nom; }
 
-// --- SETTERS ---
+// - SETTERS -
 void Joueur::setX(int px) { x = px; }
 void Joueur::setY(int py) { y = py; }
 void Joueur::setNom(const std::string& pnom) { nom = pnom; }
 
-// --- MÉTHODES ---
+// - MÉTHODES -
 void Joueur::afficher() const {
     std::cout << "Joueur : " << nom
               << " | Position : (" << x << ", " << y << ")" << std::endl;
